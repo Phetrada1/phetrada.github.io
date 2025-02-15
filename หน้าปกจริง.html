@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คุณเหมาะกับขนมแบบไหน?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="start-screen">
+        <h1>🍭 Popular 90s Snacks</h1>
+        <p>คุณเหมาะกับขนมแบบไหน?</p>
+        <button onclick="startQuiz()">เริ่มทำแบบทดสอบ</button>
+    </div>
+
+    <div id="quiz-screen" style="display: none;">
+        <h2 id="question-text"></h2>
+        <div id="options"></div>
+        <button id="next-button" onclick="nextQuestion()" disabled>ถัดไป</button>
+    </div>
+
+    <div id="result-screen" style="display: none;">
+        <h2>ผลลัพธ์ของคุณคือ...</h2>
+        <p id="result-text"></p>
+        <button onclick="restartQuiz()">ลองอีกครั้ง</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
